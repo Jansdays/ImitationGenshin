@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watt Toolkit - 游戏新闻和工具</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+        }
+        .login-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 200px;
+            padding-right: 20px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover, .sidebar a:focus {
+            background-color: #e9ecef;
+        }
+
+        .sidebar a.active {
+            background-color: #007bff;
+            color: white;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+        .news-item {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        .news-text {
+            flex: 1;
+        }
+        .news-image {
+            width: 200px;
+            height: 120px;
+            object-fit: cover;
+            margin-left: 20px;
+        }
+        .pagination {
+            margin-top: auto;
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+        .pagination a, .pagination span {
+            text-decoration: none;
+            color: #333;
+            padding: 8px 12px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .pagination a:hover, .pagination a:focus {
+            background-color: #f0f0f0;
+        }
+
+        .pagination a.active {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+        .pagination .ellipsis {
+            padding: 8px 12px;
+            color: #333;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 40px 0 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 20px;
+        }
+        .footer-section h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .footer-section p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .footer-bottom {
+            border-top: 1px solid #e0e0e0;
+            padding-top: 20px;
+            margin-top: 20px;
+            text-align: center;
+            color: #666;
+        }
+        .footer-bottom a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Watt Toolkit</div>
+            <div class="nav-links">
+                <a href="#">主页</a>
+                <a href="#">Watt 游戏加速器</a>
+                <a href="#">Watt 商城</a>
+                <a href="#">下载</a>
+                <a href="#">最新动态</a>
+                <a href="#">更多</a>
+            </div>
+            <a href="#" class="login-btn">登录</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" class="active">全部</a></li>
+                <li><a href="#">推荐活动</a></li>
+                <li><a href="#">新闻公告</a></li>
+                <li><a href="#">游戏资讯</a></li>
+                <li><a href="#">最新活动</a></li>
+                <li><a href="#">游戏新闻</a></li>
+                <li><a href="#">社区公告</a></li>
+                <li><a href="#">商城折扣</a></li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <article class="news-item">
+                <div class="news-text">
+                    <h2>CDPR因人才流失而陷入困境 未来项目还将推动DEI</h2>
+                    <p>据tech4gamers报道，近日，有消息人士透露开发商CD Projekt RED正面临人才流失危机。</p>
+                    <small>410 游戏新闻 公开授权 24年10月10日 20:07:32</small>
+                </div>
+                <img src="/placeholder.svg?height=120&width=200" alt="CDPR新闻图片" class="news-image">
+            </article>
+
+            <article class="news-item">
+                <div class="news-text">
+                    <h2>Steam新家庭共享现已向全体开放！离开家庭有冷却期</h2>
+                    <p>Steam全新改进的家庭游戏共享功能已向所有人开放，但还需要额外验证入账个家庭。</p>
+                    <small>5515 游戏新闻 公开授权 24年09月12日 18:07:38</small>
+                </div>
+                <img src="/placeholder.svg?height=120&width=200" alt="Steam新闻图片" class="news-image">
+            </article>
+
+            <article class="news-item">
+                <div class="news-text">
+                    <h2>Steam新家庭共享现已向全体开放！离开家庭有冷却期</h2>
+                    <p>Steam全新改进的家庭游戏共享功能已向所有人开放，但还需要额外验证入账个家庭。</p>
+                    <small>5515 游戏新闻 公开授权 24年09月12日 18:07:38</small>
+                </div>
+                <img src="/placeholder.svg?height=120&width=200" alt="Steam新闻图片" class="news-image">
+            </article>
+
+            <article class="news-item">
+                <div class="news-text">
+                    <h2>Steam新家庭共享现已向全体开放！离开家庭有冷却期</h2>
+                    <p>Steam全新改进的家庭游戏共享功能已向所有人开放，但还需要额外验证入账个家庭。</p>
+                    <small>5515 游戏新闻 公开授权 24年09月12日 18:07:38</small>
+                </div>
+                <img src="/placeholder.svg?height=120&width=200" alt="Steam新闻图片" class="news-image">
+            </article>
+            
+            <div class="pagination">
+                <a href="#" aria-label="Previous page">&laquo;</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <span class="ellipsis">&hellip;</span>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#" aria-label="Next page">&raquo;</a>
+                <span>24 条/页</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于 Watt Toolkit</h3>
+                    <p>Watt Toolkit 是由江苏漫凡凡星科技有限公司开发及维护的 (GNU) 自由开源软件，采用 GPL v3 开源协议开放源代码于 Github 及 Gitee。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>法律信息</h3>
+                    <p>© 2020-2024 江苏漫凡凡星科技有限公司 All Rights Reserved.</p>
+                    <p>用户协议 | 隐私政策 - 苏ICP备2023005487号-1</p>
+                    <p>增值电信业务经营许可证：苏B2-20200814 号</p>
+                </div>
+                <div class="footer-section">
+                    <h3>友情链接</h3>
+                    <p>SBCN 其乐</p>
+                    <h3>捐助</h3>
+                    <p>爱发电 ko-fi patreon</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>网上有害信息举报专区： <a href="#">全国互联网安全管理服务平台</a> | <a href="#">中国互联网违法和不良信息举报中心</a></p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    sidebarLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: url(./images/110.png);
+        background-position: center center;
+
+    }
+
+    form {
+        background-color: rgb(255, 255, 255);
+        opacity: 0.8;
+        border-radius: 20px;
+        /* 添加10像素的圆角 */
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        /* 添加黑色的浅影效果 */
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        /* 取消标签默认样式 */
+    }
+</style>
+
+<body>
+   
+    <div class="box1"> 
+        <!-- LoGo -->
+        <div style="text-align: center;">
+            <img src=".\images\miHoYo.png" style="width: 300px;">
+        </div>
+        <!-- 输入框表单 -->
+        <div class="container">
+            <form class=" pt-5 pb-4 pl-5 pr-5  mt-2 was-validated">
+                <!-- 账号 -->
+                <div class="form-group row">
+                    <label for="username" class="col-form-label col-md-3 text-md-right">账号</label>
+                    <div class="col-md-6">
+                        <input type="text" name="username" id="username" class="form-control" placeholder="请输入账号"
+                            aria-describedby="usernameHelp" required="required">
+                    </div>
+                </div>
+                <!-- 手机号 -->
+                <div class="form-group row">
+                    <label for="phone" class="col-form-label col-md-3 text-md-right">手机号</label>
+                    <div class="col-md-6">
+                        <input type="text" id="phone" class="form-control" placeholder="请输入手机号"
+                            aria-describedby="helpId" required pattern="^1[23456789]\d{9}$">
+                        <div class="invalid-feedback">
+                            请输入正确的手机号码
+                        </div>
+                    </div>
+                </div>
+                <!-- 手机验证码 -->
+                <div class="form-group row">
+                    <label for="yzm" class="col-form-label col-md-3 text-md-right">手机验证码</label>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="请输入验证码" aria-describedby="helpId" required
+                            pattern="^\d{6}$">
+                        <div class="invalid-feedback">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- 邮箱 -->
+                <div class="form-group row">
+                    <label for="email" class="col-form-label col-md-3 text-md-right">邮箱</label>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" required="required">
+                        <div class="invalid-feedback">请输入正确的邮箱格式</div>
+                    </div>
+                </div>
+                <!-- 密码 -->
+                <div class="form-group row">
+                    <label for="password" class="col-form-label col-md-3 text-md-right">密码</label>
+                    <div class="col-md-6">
+                        <input type="password" name="" class="form-control" placeholder="请输入密码"
+                            aria-describedby="helpId" required="required"
+                            pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^\da-zA-Z\s]).{6,30}$">
+                        <small id="passwordHelp" class="form-text text-muted">
+                            包含至少一个数字、一个字母（大小写不限）、一个特殊字符或符号，且密码长度为6到30个字符之间。
+                        </small>
+                    </div>
+                    <div class="invalid-feedback">
+                        请输入正确的密码格式
+                    </div>
+                </div>
+                <!-- 用户协议 -->
+                <div class="form-group col-sm-12 ">
+                    <label for="password" class="col-form-label col-md-3 text-md-right">&nbsp</label>
+                    <input type="checkbox" name="news" id="yes">
+                    <label for="">阅读并接受《用户协议》</label>
+                </div>
+                <!-- 注册按钮 -->
+                <div class="form-group row">
+                    <div class="col-md-6 offset-md-3">
+                        <button type="submit " class="btn btn-primary"><a href="home.html">注册</a></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

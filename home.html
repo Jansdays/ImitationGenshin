@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        .box1 {
+            background: url(./images//10006.jpg);
+            background-size: 100% auto;
+        }
+
+        .box2 {
+            background-color: aliceblue;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <!-- LoGo以及导航栏，注册登录按钮 -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <div class="container-fluid ">
+                            <!-- LoGo -->
+                            <img src="./images/10007.png" alt="" class="img-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <!-- 导航栏 -->
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light">
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-light" aria-current="page" href="#">首页</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-light" href="新闻.html">新闻</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-light" href="#">角色</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-light" href="#">世界</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-light" href="#">漫画</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled text-light" href="#" tabindex="-1"
+                                            aria-disabled="true">社区</a>
+                                    </li>
+                                </ul>
+                                <!-- 注册登录 -->
+                                <form class="d-flex ml-4">
+                                    <button type="button" class="btn btn-outline-light">登录</button>
+                                    <button type="button" class="btn btn-outline-light"><a
+                                            href="注册.html">注册</a></button>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- 居中的文字和按钮 -->
+        <div class="pb-5 container text-center text-light">
+            <h1>在线云游玩，浏览器里边学边练</h1>
+            <p class="mt-2">在七种元素交汇的大陆——「提瓦特」，每个人都可以成为神。</p>
+            <button class="px-5 btn btn-outline-light"><a
+                    href="https://ys.mihoyo.com/cloud/?utm_source=default#/">点击开始</a></button>
+        </div>
+    </div>
+    <!-- 游戏简介 -->
+    <div class="box2 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="./images/10009.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h1 class="mt-5">2020年米哈游开发的开放世界冒险游戏</h1>
+                    <p class="mt-3 text-muted">面对无法掌控的境遇，人类总会喟叹自身的无力…… 但在人生最陡峭的转折处，若有凡人的渴望达到极致，神明的视线就将投射而下。</p>
+                    <div class="d-grid d-md-block">
+                        <button class="btn btn1 btn-outline-dark px-3 text-muted ">了解详情</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 角色设定 -->
+    <div class="box3">
+        <div class="container ">
+            <div class="row align-items-center mt-5 flex-md-row-reverse">
+                <div class="col-md-6 order-md-1">
+                    <h1>角色设定</h1>
+                    <p class="text-muted">游戏中拥有许多可操控角色，开局的默认角色可以选择性别，此外的角色性别固定。除旅行者外的角色，可以通过剧情、祈愿和活动获取。</p>
+                    <button class="btn btn1 btn-outline-dark px-3 text-dark" ">了解详情</button>
+                </div>
+              <div class=" col-md-6 d-flex oredr-md-1"
+                        style="border-left: 3px solid #000;border-right: 3px solid #000;">
+                        <img src=" ./images/100010.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 游戏特色 -->
+    <div class="box4">
+        <div class="container mt-5">
+            <h1>游戏特色</h1>
+            <hr>
+            <div class="row mt-4 gx-5 mb-3">
+                <div class="col-md-4 d-flex align-items-start flex-md-column">
+                    <img src="./images/1001.png" alt="" class="img-fluid mt-3">
+                    <div>
+                        <h3 class="mt-3">元素反应系统</h3>
+                        <p class="text-muted">多种不同元素先后作用同一个体上时即可发生元素反应，表现为后施加的元素覆盖先施加的元素，
+                            大部分情况下会造成大量后者类型的元素伤害及物理伤害。</p>
+                        <a href="#" class="text-primary">马上学习></a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-start flex-md-column">
+                    <img src="./images/1002.png" alt="" class="img-fluid mt-4">
+                    <div>
+                        <h3 class="mt-3">采集系统</h3>
+                        <p class="text-muted">游戏中有广袤的地图和大量的资源素材供玩家收集。
+                            一般野外的植被、城镇中的道具点都会有闪光点显示，玩家靠近后直接按F键就可以拾取。</p>
+                        <a href="#" class="text-primary">马上学习></a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-start flex-md-column">
+                    <img src="./images/1003.png" alt="" class="img-fluid mt-4">
+                    <div>
+                        <h3 class="mt-3">冒险系统</h3>
+                        <p class="text-muted">玩家通过不断积累冒险阅历，达到升阶评定，可以提高自身冒险等阶。
+                            提高冒险等阶，可以获取奖励、解锁剧情任务、开启更丰富的玩法系统。</p>
+                        <a href="#" class="text-primary">马上学习></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚命名 -->
+    <footer class="box2 text-center py-5">
+        <div class="container">
+            <h6>
+                POWER BY  Jansdasy
+            </h6>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>学院首页</title>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+        <script src="./js/jQuery-v3.4.0.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/bootstrap.bundle.js" type="text/javascript" charset="utf-8"></script>
+        <style type="text/css">
+            body {
+                position: relative;
+                padding: 12rem;
+            }
+            .fixed-top {
+                background-color: #FFFFFF;
+            }
+            .jumbotron {
+                background: url(images/logo.png) no-repeat;
+                margin-bottom: 0px;
+            }
+            .list-group-item {
+                border: 0px;
+            }
+            .list-unstyled a,
+            #list1 a{
+                color: red;
+            }
+            .card-header{
+                background: #0062CC;
+                color: #FFFFFF;
+            }
+        </style>
+    </head>
+    <body data-spy="scroll" data-target="#navbarDemo" data-offset="160">
+        <div class="container fixed-top">
+            <div class="jumbotron">
+                <form class="form-inline float-right d-none d-sm-block">
+                    <input type="text" class="form-control" size="30" placeholder="请输入关键字">
+                    <button type="button" class="btn btn-primary">搜索</button>
+                </form>
+            </div>
+            <nav class="navbar navbar-expand-sm bg-primary navbar-dark" id="navbarDemo">
+                <div class="navbar-header">
+                    <a class="navbar-brand mr-5" href="#college">学院概况</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="navbar-toggler-icon">   </span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="#news">热点新闻</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="#PartyBuilding">党建工作</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="#department">专业设置</a>
+                        </li>
+                        <li class="nav-item" data-toggle="modal" data-target="#myModal">
+                            <a class="nav-link" href="#">联系我们</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">联系我们</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="name" name="name" placeholder="姓名" type="text" required>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <input class="form-control" id="email" name="email" placeholder="邮箱" type="email" required>
+                                </div>
+                            </div>
+                            <textarea class="form-control" id="comments" name="comments" placeholder="请输入内容" rows="5"></textarea><br>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <button class="btn btn-primary float-right" type="submit">发送</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="college">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <!--<p>中的文本内容用省略号替代-->
+                    <p>学校致力于打造国内一流专业群，专业全面对应战略新兴产业，服务新一代信息技术产业链，底蕴深厚，成果丰硕。
+                        已成为技术技能人才培养先进技术创造与积累、优秀传统文化传承与发展的职业教育战略高地。
+                    </p>
+                    <p>欢迎八方学子来此圆梦，我们将提供最好的教学资源和服务，助力有志青年成长，
+                        着力培养厚德尚能、崇实敬业、产业急需、技能高超的高素质技术技能人才
+                    </p>    
+                </div>
+                <div class="col-sm-6 col-md-8">
+                    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/xiaoyuan1.png" class="d-block w-100" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/xiaoyuan2.png" class="d-block w-100" alt="Second slide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="news">
+            <h3 class="text-muted">热点新闻</h3>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">学党史·筑信仰·担使命·庆百年<span class="float-right">2021-4-26</span></a>
+                        <a href="#" class="list-group-item list-group-item-action">做好垃圾分类 推动绿色发展<span class="float-right">2021-4-16</span></a>
+                        <a href="#" class="list-group-item list-group-item-action">全国职业教育大会在京落幕<span class="float-right">2021-4-14</span></a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">学院举办教师专业能力比赛选拔赛<span class="float-right">2021-4-12</span></a>
+                        <a href="#" class="list-group-item list-group-item-action">学院联合后勤管理处召开学生座谈会<span class="float-right">2021-4-8</span></a>
+                        <a href="#" class="list-group-item list-group-item-action">院团总支爱国主义教育实践活动圆满举行<span class="float-right">2021-4-1</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="PartyBuilding">
+            <h3 class="text-muted">党建工作</h3>
+                <hr>
+                <ul class="nav nav-tabs mb-2" id="myTab">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#tabs1" role="tab">十九大时间</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs2" role="tab">学习党史</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs3" role="tab">支部主题党日</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="tabs-tabContent">
+                    <div class="tab-pane active" id="tabs1">
+                        <img src="images/shijiuda.png">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled">
+                                    <li class="m-3">
+                                        <a href="#">十九大报告</a>
+                                    </li>
+                                    <li class="m-3">
+                                        <a href="#">十九大文献</a>
+                                    </li>
+                                    <li class="m-3">
+                                        <a href="#">十九届一中全会</a>
+                                    </li>
+                                    <li class="m-3">
+                                        <a href="#">十九届中央纪委全会</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled">
+                                    <li class="m-3">
+                                        <a href="#">十九届二中全会</a>
+                                    </li>
+                                    <li class="m-3">
+                                        <a href="#">十九届三中全会</a>
+                                    </li>
+                                    <li class="m-3">
+                                        <a href="#">十九届四中全会</a>
+                                    </li>
+                                    <li class="m-3">
+                                        <a href="#">十九届五中全会</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabs2">
+                        <img src="images/xuexi.png">
+                        <ul class="list-unstyled">
+                            <li class="m-2">
+                                <a href="#">党史知识</a>
+                            </li>
+                            <li class="m-2">
+                                <a href="#">党史课堂</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="tabs3">
+                        <div class="list-group m-4" id="list1">
+                            <a href="#" class="list-group-item list-group-item-action">关于开展 2021 年 4 月“支部主题党日”活动的工作提示</a>
+                            <a href="#" class="list-group-item list-group-item-action">关于开展 2021 年 3 月“支部主题党日”活动的工作提示</a>
+                            <a href="#" class="list-group-item list-group-item-action">关于开展 2021 年 2 月“支部主题党日”活动的工作提示</a>
+                            <a href="#" class="list-group-item list-group-item-action">关于开展 2021 年 1 月“支部主题党日”活动的工作提示</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="container" id="department">
+            <h3 class="text-muted">专业设置</h3>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h4>软件技术</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>国家骨干校重点专业，高等职业教育重点</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h4>人工智能技术</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>2020年新增专业，全国首批招生</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h4>数字媒体应用</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>省职业教育特色建设专业，省中高中衔接专业</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h4>大数据技术</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>市“双一流”精神建设重点发展专业</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </body>
+</html>
